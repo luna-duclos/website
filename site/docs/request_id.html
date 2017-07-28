@@ -14,7 +14,7 @@
 			<article>
 				<h2>http.request_id</h2>
 								
-				<p>request_id generates a UUID which can be referenced via the <code>{request_id}</code> <a href="placeholders">placeholder</a>, for use in many other directives including <a href="header"><code>header</code></a> and <a href="log"><code>log</code></a></p>
+				<p>request_id generates a UUID which can be referenced via the <code>{request_id}</code> <a href="/docs/placeholders">placeholder</a>, for use in many other directives including <a href="/docs/header"><code>header</code></a> and <a href="/docs/log"><code>log</code></a></p>
 
 				<p>When request_id is used, the <code>{request_id}</code> <a href="/docs/placeholders">placeholder</a> will have a value; otherwise it will be empty.</p>	
 
@@ -27,7 +27,7 @@
 				<p>Set the request ID in a response header</p>
 
 				<code class="block"><span class="cf-dir">request_id</span> 
-				<span class="cf-arg">  header /  X-Request-Id {request_id}</span></code>
+<span class="cf-dir">header</span> <span class="cf-arg">/  Caddy-Request-Id {request_id}</span></code>
 
 				{{.Include "/includes/docs-helpbox.html"}}
 			</article>
