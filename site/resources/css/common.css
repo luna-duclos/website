@@ -302,7 +302,6 @@ code.cmd.bash::before {
 	vertical-align: middle;
 }
 
-.footer-sponsors img.arroyo { max-width: 200px; position: relative; top: 3px; }
 .footer-sponsors img.do { max-width: 120px; }
 .footer-sponsors img.dnsimple { max-width: 80px; }
 .footer-sponsors img.minio { max-height: 50px; }
