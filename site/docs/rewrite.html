@@ -80,11 +80,11 @@
 
 				<h3 id="examples">Examples</h3>
 
-				<p>Rewrite everything to /index.php. (<code>rewrite / /index.php{uri}</code> will only match /)</p>
+				<p>Rewrite everything to /index.php. (<code>rewrite / /index.php</code> will only match /)</p>
 
 				<p><code class="block"><span class="cf-dir">rewrite</span> / {
 	<span class="cf-subdir">regexp</span> .*
-	<span class="cf-subdir">to</span> /index.php{uri}
+	<span class="cf-subdir">to</span> /index.php
 }</code></p>
 
 				<p>When requests come in for /mobile, actually serve /mobile/index.</p>
