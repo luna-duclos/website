@@ -28,7 +28,6 @@
 	<span class="cf-subdir">index</span>    <i>indexfile</i>
 	<span class="cf-subdir">env</span>      <i>key value</i>
 	<span class="cf-subdir">except</span>   <i>ignored_paths...</i>
-	<span class="cf-subdir">pool</span>     <i>pool_size</i>
 	<span class="cf-subdir">upstream</span> <i>endpoint</i>
 	<span class="cf-subdir">connect_timeout</span> <i>duration</i>
 	<span class="cf-subdir">read_timeout</span>    <i>duration</i>
@@ -52,8 +51,6 @@
 						<strong>env</strong> property can be used multiple times and values may use <a href="/docs/placeholders">request placeholders</a>.</li>
 					<li><strong>except</strong> is a list of space-separated request paths to be excepted from fastcgi processing,
 						even if it matches the base path.</li>
-					<li><strong>pool</strong> is the number of persistent connections to reuse (can be good for performance on
-						Windows); default is 0.</li>
 					<li><strong>upstream</strong> specifies an additional backend to use. Basic load balancing will be performed.
 						This can be specified multiple times.</li>
 					<li><strong>connect_timeout</strong> is the time allowed for connecting to the backend. Must be a duration
