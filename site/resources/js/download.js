@@ -11,7 +11,9 @@ $(function() {
 			"netbsd": "NetBSD",
 			"dragonfly": "Dragonfly",
 			"solaris": "Solaris",
-			"android": "Android"
+			"android": "Android",
+			"plan9": "Plan 9",
+			"nacl": "NACL"
 		},
 		"GOARCH": {
 			"386": "32-bit",

@@ -40,10 +40,10 @@
 
 				<ul>
 				<li><a href="/docs/log">Log</a> that it happened using the <code>{mitm}</code> <a href="/docs/placeholders">placeholder</a> and a custom log format.</li>
+				<li>If proxying to an upstream application, <a href="/docs/proxy">add a request header</a> using header_upstream in the <code>proxy</code> directive with a value that has <code>{mitm}</code>.</li>
 				<li>If you're using <a href="/docs/templates">templates</a>, display a warning to the user on your website using the <code>{{"{{"}}.IsMITM{{"}}"}}</code> <a href="/docs/template-actions">template action</a>.</li>
 				<li>Perform an <a href="/docs/rewrite">internal rewrite</a> of the URI to a dedicated warning, error, or informational page.</li>
 				<li><a href="/docs/redir">Redirect</a> the user to another page or site.</li>
-				<li>If proxying to an upstream application, <a href="/docs/proxy">add a request header</a> using header_upstream in the <code>proxy</code> directive with a value that has <code>{mitm}</code>.</li>
 				<li>Close the connection immediately with an empty response (coming soon, maybe).</li>
 				</ul>
 

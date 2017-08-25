@@ -191,6 +191,18 @@
 				<p>If <code>0</code> or <code>false</code>, Caddy will treat request paths in a case-insensitive manner when accessing assets on the file system or matching requests for middleware handlers. The default is 1/true (case-sensitive paths).</p>
 
 
+				<h3 id="exit-codes">Exit Codes</h3>
+
+				<ul>
+					<li><b>0</b> - normal or expected exit</li>
+					<li><b>1</b> - error before server finished starting</li>
+					<li><b>2</b> - double SIGINT (force quit)</li>
+					<li><b>3</b> - error stopping with SIGQUIT</li>
+					<li><b>4</b> - shutdown callback(s) returned error(s)</li>
+				</ul>
+
+				<p>A good rule of thumb is to NOT automatically restart Caddy if it exits with status of 1.</p>
+
 			</article>
 		</div>
 
