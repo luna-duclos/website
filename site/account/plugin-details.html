@@ -1,11 +1,14 @@
 {{ $pl := .Context "plugin" }}
 {{ $title := printf "%s Details" $pl.Name }}
 {{.Include "/account/includes/header.html" $title}}
+<script src="/resources/js/account/plugin-hide-delete.js"></script>
 
 <main>
 	<h1>Plugin Details</h1>
 
 	<h2>{{$pl.Name}}</h2>
+
+	<label title="Hidden plugins are not downloadable or visible on the website."><input type="checkbox" data-plugin-id="{{$pl.ID}}" id="hide-plugin"{{if $pl.Hidden}} checked{{end}}> Hidden</label>
 
 	<table class="key-value-pairs">
 		<tr>
@@ -98,6 +101,10 @@
 		</tr>
 	{{end}}
 	</table>
+
+	<br><br>
+
+	<a id="delete-plugin" data-plugin-id="{{$pl.ID}}" class="danger" href="javascript:">Delete Plugin</a>
 
 </main>
 {{.Include "/account/includes/footer.html"}}

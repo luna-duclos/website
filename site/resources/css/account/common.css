@@ -164,6 +164,15 @@ button.wide {
 	width: 100%;
 }
 
+button.danger {
+	background: #CC0000;
+	color: #FFF;
+}
+
+a.danger {
+	color: #CC0000;
+}
+
 table.form,
 table.form td,
 table.form {
