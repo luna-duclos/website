@@ -37,7 +37,7 @@ We hope that many users will be able to deploy forwardproxy and find it helpful 
 
 ## Graceful Binary Upgrades
 
-For years now, Caddy has been able to reload reload its configuration with zero downtime upon SIGUSR1, but we hadn't implemented SIGUSR2... until now.
+For years now, Caddy has been able to reload its configuration with zero downtime upon SIGUSR1, but we hadn't implemented SIGUSR2... until now.
 
 Sending SIGUSR2 to Caddy will invoke a graceful, zero-downtime binary upgrade. Simply replace the binary file on disk and then trigger the upgrade with the signal to apply changes. Unlike SIGUSR1, the Caddyfile will *not* be reloaded, so you can be assured that the same configuration will continue to be used, even if the Caddyfile changed on disk in the meantime.
 
